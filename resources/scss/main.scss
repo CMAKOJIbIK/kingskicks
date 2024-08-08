@@ -1,0 +1,17 @@
+@import "components/index";
+.modal_body{
+    height: 100vh;
+    overflow: hidden;
+}
+.error_product{
+    background: #2d3748;
+    display: flex;
+    color: #f2f2f2;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 72px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 54px;
+
+}

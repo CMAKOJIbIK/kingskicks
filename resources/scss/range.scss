@@ -1,0 +1,70 @@
+.range {
+
+    .name_slider {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+
+        h2 {
+            font-family: "Permanent Marker", sans-serif;
+            font-size: 72px;
+            color: #f2f2f2;
+        }
+
+        .slider {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 25px;
+            margin-bottom: 10px;
+
+            .images {
+                width: 1250px;
+                height: 450px;
+                overflow: hidden;
+
+                img {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                }
+            }
+
+            .left_arrow {
+                margin-right: 25px;
+            }
+
+            .right_arrow {
+                margin-left: 25px;
+            }
+        }
+
+        .underline {
+            img {
+                height: 65px;
+            }
+        }
+    }
+
+    .content {
+        display: flex;
+        grid-gap: 35px;
+        flex-direction: column;
+
+        .brand {
+            position: relative;
+
+            h3 {
+                display: flex;
+                justify-content: center;
+                font-family: "Permanent Marker", sans-serif;
+                font-size: 72px;
+                color: #f2f2f2;
+                margin-bottom: 15px;
+            }
+        }
+    }
+}

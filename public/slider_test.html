@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>My Now Amazing Webpage</title>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+</head>
+<body>
+
+<div class="your-class">
+    <div style="background: green">your content</div>
+    <div style="background: red">your content</div>
+    <div style="background: purple">your content</div>
+    <div style="background: green">your content</div>
+    <div style="background: red">your content</div>
+    <div style="background: purple">your content</div>
+    <div style="background: green">your content</div>
+    <div style="background: red">your content</div>
+    <div style="background: purple">your content</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+<script type="text/javascript" src="slick/slick.min.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.your-class').slick({
+            // Пример реальных настроек
+            arrows: true,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            autoplay: true,
+            autoplaySpeed: 2000,
+        });
+    });
+</script>
+
+</body>
+</html>

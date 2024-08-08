@@ -1,0 +1,281 @@
+.title {
+    .prod {
+        background: #040D08;
+        color: #f2f2f2;
+
+        h3 {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 300;
+            text-align: center;
+            padding: 13px 0;
+        }
+    }
+
+    .nav {
+        padding: 15px 0 15px 0;
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+        background: #f2f2f2;
+
+
+        .logo, .filter_logo, .search, .basket_logo {
+            margin-right: 5vw;
+        }
+
+        .search {
+
+            label {
+                position: relative;
+                align-items: center;
+                display: grid;
+                grid-template-columns: 1fr auto;
+                width: 40vw;
+                max-width: 500px;
+                //height: 60px;
+                padding: 20px 20px 20px 20px;
+                background: #040D08;
+                border-radius: 10px;
+
+                input {
+                    border: none;
+                    background: #040D08;
+                    width: 20vw;
+                    max-width: 450px;
+                    //padding:20px 60px 20px  20px;
+                    //min-height: 60px;
+                    //padding-right: 60px;
+                    font-family: "Montserrat", sans-serif;
+                    font-weight: 500;
+                    font-size: 16px;
+                    color: #f2f2f2;
+                }
+
+                :focus {
+                    outline: none;
+                    //border: 1px solid transparent;
+                }
+
+                svg {
+                    //position: relative;
+
+                }
+
+                .mobile {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .title {
+        .nav {
+            .logo {
+                img {
+                    width: 80px;
+                    height: 53px;
+                }
+            }
+
+            .filter_logo {
+                img {
+                    width: 65px;
+                }
+            }
+
+            .search {
+                label {
+                    width: 30vw;
+                }
+            }
+
+            .basket_logo {
+                img {
+                    width: 69px;
+                    //height: 59px;
+                }
+            }
+
+            .profile_logo {
+                img {
+                    width: 65px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 642px) {
+    .title {
+
+
+        .prod {
+            background: #040D08;
+            color: #f2f2f2;
+
+            h3 {
+                font-family: "Montserrat", sans-serif;
+                font-weight: 300;
+                font-size: 13px;
+                text-align: center;
+                padding: 13px 0;
+            }
+        }
+
+        .nav {
+            background: #f2f2f2;
+            display: flex;
+            padding: 7px;
+
+            //padding: ;
+            .logo {
+                order: 2;
+
+
+            }
+
+            .filter_logo {
+                order: 1;
+            }
+
+            .search {
+                order: 3;
+            }
+
+            .basket_logo {
+                order: 4;
+            }
+
+            .profile_logo {
+                order: 5;
+            }
+
+            .logo, .filter_logo, .search, .basket_logo {
+                margin-right: 0px;
+            }
+
+            .search {
+                .label {
+                    padding: 0;
+                    margin: 0;
+                    background: none;
+                    display: inline;
+
+                    input {
+                        display: none;
+                    }
+
+
+                    svg {
+                        width: 50px;
+                        height: 50px;
+                        //fill: #040D08;
+                        color: #040D08;
+                        position: static;
+                        transform: none;
+                    }
+
+                    .pc {
+                        display: none;
+                    }
+
+                    .mobile {
+                        display: block;
+                    }
+                }
+
+
+            }
+
+            .logo {
+                img {
+                    //height: 35px;
+                    width: 70px;
+                }
+
+
+            }
+
+            .filter_logo {
+                img {
+                    width: 58px;
+                    //height: 26px;
+                }
+
+            }
+
+            .basket_logo {
+                img {
+                    width: 50px;
+                    //height: 30px;
+                    margin-left: 14px;
+                }
+
+            }
+
+            .profile_logo {
+                img {
+                    width: 50px;
+                    margin-left: 14px;
+                    //height: 40px;
+                }
+
+            }
+
+            .search_active_logo {
+                display: none;
+            }
+        }
+
+        .mobile_search_open {
+            .bg{
+                top: 0;
+                left: 0;
+                position: fixed;
+                z-index: 20;
+                width: 100vw;
+                height: 100vh;
+            }
+            .search{
+
+                .label {
+                    position: relative;
+                    z-index: 21;
+                    margin-left: 13px;
+                    display: block;
+                    padding: 15px;
+                    width: 50vw;
+                    background: #040D08;
+
+                    input {
+
+                        display: block;
+                        width: 50vw;
+                        font-weight: 500;
+                        font-size: 16px;
+                        font-family: "Montserrat", sans-serif;
+
+                    }
+
+
+
+                    .mobile {
+                        display: none;
+                    }
+                }
+            }
+
+
+            .logo {
+                display: none;
+            }
+            .basket_logo{
+                display: none;
+            }
+        }
+    }
+}
+
