@@ -401,49 +401,48 @@
                     }
                 }
 
+                .button_search {
 
-            }
-            .button_search {
-                position: relative;
-                transform: translate(81%, -150%);
-                display: flex;
-
-
-                button {
-                    position: relative;
                     display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    z-index: 20;
-                    background: #040D08;
-                    border: 2px solid #f2f2f2;
-                    //padding: 17px 23px;
-                    height: 70px;
-                    width: 230px;
 
 
-                    p {
-                        font-family: "Montserrat", sans-serif;
-                        font-weight: 700;
-                        font-size: 35px;
-                        color: #f2f2f2;
-                        margin-right: 5px;
+                    button {
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        z-index: 20;
+                        background: #040D08;
+                        border: 2px solid #f2f2f2;
+                        //padding: 17px 23px;
+                        height: 70px;
+                        width: 230px;
+
+
+                        p {
+                            font-family: "Montserrat", sans-serif;
+                            font-weight: 700;
+                            font-size: 35px;
+                            color: #f2f2f2;
+                            margin-right: 5px;
+                        }
+                        .pc{
+                            height: 35px;
+                            width: 35px;
+                        }
                     }
-                    .pc{
-                        height: 35px;
-                        width: 35px;
-                    }
-                }
 
-                .an {
-                    position: absolute;
-                    z-index: 10;
-                    transform: translate(5px, 5px);
-                    height: 70px;
-                    width: 230px;
-                    border: 2px solid #f2f2f2;
+                    .an {
+                        position: absolute;
+                        z-index: 10;
+                        transform: translate(5px, 5px);
+                        height: 70px;
+                        width: 230px;
+                        border: 2px solid #f2f2f2;
+                    }
                 }
             }
+
 
         }
     }
@@ -451,37 +450,25 @@
 
 }
 
-@media (max-width: 1528px) {
+@media (max-width: 1600px) {
     .filter {
-        height: 100vh;
+        max-height: 500px;
         width: 100vw;
         //overflow: scroll;
 
         .content {
+            //display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0 60px;
             margin-top: 0px;
             width: 100vw;
-            height: 91vh;
+            height: 99.2vh;
 
             .columns {
                 .column {
                     grid-gap: 20px;
-                }
-                .button_search{
-                    transform: translate(79.5%, -200%);
-
-                }
-            }
-        }
-    }
-}
-
-@media (max-width: 1439px) {
-    .filter {
-        .content {
-
-
-            .columns {
-                .column {
                     .brand {
                         .name {
                             h3 {
@@ -534,27 +521,21 @@
                             }
                         }
                     }
-
                     .size_price {
                         .size {
                             .name {
                                 h3 {
                                     font-weight: 650;
-
                                     font-size: 64px;
-
                                 }
-
                                 img {
                                     width: 230px;
                                 }
                             }
-
                             .sizes {
                                 div {
                                     width: 80px;
                                     height: 40px;
-
                                     p {
                                         height: 40px;
                                         font-size: 28px;
@@ -565,7 +546,6 @@
                                 .active {
                                     width: 80px;
                                     height: 40px;
-
                                     p {
                                         height: 40px;
                                         font-size: 28px;
@@ -576,12 +556,10 @@
                         }
 
                         .price {
+                            margin-top: 10px;
                             .name {
                                 h3 {
-
-
                                     font-weight: 650;
-
                                     font-size: 64px;
                                 }
 
@@ -589,10 +567,8 @@
                                     width: 230px;
                                 }
                             }
-
                             .slide {
                                 margin-top: 10px;
-
                                 .from {
                                     .text {
                                         p {
@@ -604,9 +580,33 @@
                             }
                         }
                     }
+                    .season{
+                        .button_search{
+                            margin-top: 20px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@media (max-width: 1439px) {
+    .filter {
+        .content {
+
+
+            .columns {
+                .column {
+
+
+
                 }
                 .button_search{
-                    transform: translate(77.5%, -200%);
 
                 }
             }

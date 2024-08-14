@@ -20,7 +20,6 @@ function body_scroll(){
 }
 
 function size_modal(){
-    console.log("вызвал")
     const size_modal = document.querySelectorAll(".filter .size_price .sizes .div");
     size_modal.forEach(el => {
         el.addEventListener("click", () => {
